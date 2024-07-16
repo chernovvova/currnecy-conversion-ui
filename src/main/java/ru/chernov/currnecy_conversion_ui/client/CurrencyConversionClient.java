@@ -11,9 +11,5 @@ import ru.chernov.currnecy_conversion_ui.dto.CurrencyConversionResponse;
 @FeignClient(name = "currency-conversion-client", url = "${currency-coversion-api.url}")
 public interface CurrencyConversionClient {
     @GetMapping("/convert")
-    public CurrencyConversionResponse convertCurrency(
-        @RequestParam("from") String from,
-        @RequestParam("to") String to,
-        @RequestParam("amount") BigDecimal amount
-    );
+    public CurrencyConversionResponse convertCurrency(@RequestParam("from") String from, @RequestParam("to") String to, @RequestParam("amount") BigDecimal amount);
 } 
