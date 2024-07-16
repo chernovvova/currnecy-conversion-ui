@@ -1,5 +1,9 @@
 spring:
     application:
         name: currnecy-conversion-ui
+
 server:
     port: 8081
+
+currency-coversion-api:
+    url: http://localhost:8080/
