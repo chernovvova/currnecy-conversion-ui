@@ -12,4 +12,5 @@ import ru.chernov.currnecy_conversion_ui.dto.CurrencyConversionResponse;
 public interface CurrencyConversionClient {
     @GetMapping("/convert")
     public CurrencyConversionResponse convertCurrency(@RequestParam("from") String from, @RequestParam("to") String to, @RequestParam("amount") BigDecimal amount);
+    
 } 
